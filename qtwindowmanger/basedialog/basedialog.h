@@ -1,6 +1,8 @@
 #ifndef BASEDIALOG_H
 #define BASEDIALOG_H
 
+#include "standinput.h"
+
 #include <QDialog>
 #include <QGridLayout>
 #include <QFileDialog>
@@ -22,6 +24,9 @@ public slots:
     void filenameSelect();
     void filedirSelect();
     void filelistSelect();
+    void showColor();
+    void showFont();
+    void showStandInput();
 
 private:
     QGridLayout *main_layout;
@@ -39,6 +44,15 @@ private:
     QLineEdit *filename_select_edit;
     QLineEdit *filedir_select_edit;
     QTextEdit *filelist_select_edit;
+
+    QPushButton *color_button;
+    QFrame *color_frame;
+
+    QPushButton *font_button;
+    QLineEdit *font_test;
+
+    QPushButton  *input_button;
+    StandInput *standinput;
 
 
 };

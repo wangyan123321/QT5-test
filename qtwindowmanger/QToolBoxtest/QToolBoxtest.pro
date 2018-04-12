@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-04-07T10:54:56
+# Project created by QtCreator 2018-04-11T15:34:24
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = basedialog
+TARGET = QToolBoxtest
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -25,9 +25,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        basedialog.cpp \
-    standinput.cpp
+        qtoolboxwidget.cpp
 
 HEADERS += \
-        basedialog.h \
-    standinput.h
+        qtoolboxwidget.h

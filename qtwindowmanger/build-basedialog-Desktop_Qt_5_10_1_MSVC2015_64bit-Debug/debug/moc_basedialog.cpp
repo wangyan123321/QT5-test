@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_basedialog_t {
-    QByteArrayData data[6];
-    char stringdata0[69];
+    QByteArrayData data[9];
+    char stringdata0[103];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,11 +36,15 @@ QT_MOC_LITERAL(1, 11, 12), // "filenameSave"
 QT_MOC_LITERAL(2, 24, 0), // ""
 QT_MOC_LITERAL(3, 25, 14), // "filenameSelect"
 QT_MOC_LITERAL(4, 40, 13), // "filedirSelect"
-QT_MOC_LITERAL(5, 54, 14) // "filelistSelect"
+QT_MOC_LITERAL(5, 54, 14), // "filelistSelect"
+QT_MOC_LITERAL(6, 69, 9), // "showColor"
+QT_MOC_LITERAL(7, 79, 8), // "showFont"
+QT_MOC_LITERAL(8, 88, 14) // "showStandInput"
 
     },
     "basedialog\0filenameSave\0\0filenameSelect\0"
-    "filedirSelect\0filelistSelect"
+    "filedirSelect\0filelistSelect\0showColor\0"
+    "showFont\0showStandInput"
 };
 #undef QT_MOC_LITERAL
 
@@ -50,7 +54,7 @@ static const uint qt_meta_data_basedialog[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       7,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -58,12 +62,18 @@ static const uint qt_meta_data_basedialog[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   34,    2, 0x0a /* Public */,
-       3,    0,   35,    2, 0x0a /* Public */,
-       4,    0,   36,    2, 0x0a /* Public */,
-       5,    0,   37,    2, 0x0a /* Public */,
+       1,    0,   49,    2, 0x0a /* Public */,
+       3,    0,   50,    2, 0x0a /* Public */,
+       4,    0,   51,    2, 0x0a /* Public */,
+       5,    0,   52,    2, 0x0a /* Public */,
+       6,    0,   53,    2, 0x0a /* Public */,
+       7,    0,   54,    2, 0x0a /* Public */,
+       8,    0,   55,    2, 0x0a /* Public */,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -82,6 +92,9 @@ void basedialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->filenameSelect(); break;
         case 2: _t->filedirSelect(); break;
         case 3: _t->filelistSelect(); break;
+        case 4: _t->showColor(); break;
+        case 5: _t->showFont(); break;
+        case 6: _t->showStandInput(); break;
         default: ;
         }
     }
@@ -113,13 +126,13 @@ int basedialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 7;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 7)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 4;
+        _id -= 7;
     }
     return _id;
 }
