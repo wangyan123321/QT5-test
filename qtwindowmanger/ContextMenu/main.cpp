@@ -1,14 +1,10 @@
-#include "clockdialog.h"
+#include "contentmenudialog.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    //DigiClock w;
-    //w.show();
-
-    ClockDialog w;
-
+    ContentMenuDialog w;
     w.show();
 
     return a.exec();
