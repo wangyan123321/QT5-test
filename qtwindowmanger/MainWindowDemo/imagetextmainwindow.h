@@ -13,6 +13,22 @@
 #include <QIcon>
 #include <QMenuBar>
 #include <QMovie>
+#include <QFileDialog>
+#include <QFile>
+#include <QTextStream>
+#include <QPrinter>
+#include <QPrintDialog>
+#include <QTextDocument>
+#include <QRect>
+#include <QSize>
+#include <QPainter>
+#include <QFontDatabase>//获取当前系统的支持的字体编辑信息
+#include <QFontComboBox>//字体选择下来列表
+#include <QColor>
+#include <QColorDialog>
+#include <QPalette>
+#include <QDebug>
+
 
 /***
  * 本实例主要熟悉QMainWindow的整体架构
@@ -42,8 +58,12 @@ public:
     void createAction();
     void createMenus();
     void createToolBar();
+    //加载文件
     void loadFile(QString filename);
+    //字体操作
     void mergeFormat(QTextCharFormat);
+    //创建文本编辑工具栏格式
+    void createTextEditBar();
 
 private:
     //各项菜单栏
@@ -53,7 +73,7 @@ private:
     QMenu *mirror_menu;
     QImage img;
     QMovie img1;
-    QString filename;
+    QString *filename;
     ShowWidget *show_widget;
     //文件菜单
     QAction *open_file_action;
@@ -84,9 +104,25 @@ private:
     QToolBar *mirror_tool;
     QToolBar *do_tool_bar;
 
+    //文本编辑操作控件
+    QToolBar *text_tool_bar;
+    QLabel *font_label;
+    QFontComboBox *font_combox;
+    QLabel *size_label;
+    QComboBox *size_combox;
+    QToolButton *bold_button;
+    QToolButton *italic_button;
+    QToolButton *underline_button;
+    QToolButton *color_button;
+
+
 public slots:
+
+    //文件槽
     void open();
     void newfile();
+
+
     void copy();
     void cut();
     void past();
@@ -105,6 +141,15 @@ public slots:
 
     void unDo();
     void reDo();
+
+    //文本编辑槽
+    void showFontComBox(QString comboxstr);
+    void showSizeSpinBox(QString spinValue);
+    void showBoldBtn();
+    void showItalicBtn();
+    void showUnderLineBtn();
+    void showColorBtn();
+    void showCurrentFormatChanged( QTextCharFormat fmt);
 };
 
 #endif // IMAGETEXTMAINWINDOW_H

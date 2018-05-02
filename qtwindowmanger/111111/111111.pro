@@ -1,15 +1,14 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-04-25T09:59:55
+# Project created by QtCreator 2018-04-29T18:52:07
 #
 #-------------------------------------------------
 
 QT       += core gui
-QT       +=printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = MainWindowDemo
+TARGET = 111111
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -26,9 +25,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        imagetextmainwindow.cpp \
-    showwidget.cpp
+        mainwindow.cpp
 
 HEADERS += \
-        imagetextmainwindow.h \
-    showwidget.h
+        mainwindow.h
+
+FORMS += \
+        mainwindow.ui

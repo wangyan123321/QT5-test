@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ImageTextMainWindow_t {
-    QByteArrayData data[19];
-    char stringdata0[157];
+    QByteArrayData data[30];
+    char stringdata0[309];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -49,14 +49,29 @@ QT_MOC_LITERAL(14, 109, 9), // "rotate270"
 QT_MOC_LITERAL(15, 119, 14), // "mirrHorizontal"
 QT_MOC_LITERAL(16, 134, 12), // "mirrVertical"
 QT_MOC_LITERAL(17, 147, 4), // "unDo"
-QT_MOC_LITERAL(18, 152, 4) // "reDo"
+QT_MOC_LITERAL(18, 152, 4), // "reDo"
+QT_MOC_LITERAL(19, 157, 14), // "showFontComBox"
+QT_MOC_LITERAL(20, 172, 9), // "comboxstr"
+QT_MOC_LITERAL(21, 182, 15), // "showSizeSpinBox"
+QT_MOC_LITERAL(22, 198, 9), // "spinValue"
+QT_MOC_LITERAL(23, 208, 11), // "showBoldBtn"
+QT_MOC_LITERAL(24, 220, 13), // "showItalicBtn"
+QT_MOC_LITERAL(25, 234, 16), // "showUnderLineBtn"
+QT_MOC_LITERAL(26, 251, 12), // "showColorBtn"
+QT_MOC_LITERAL(27, 264, 24), // "showCurrentFormatChanged"
+QT_MOC_LITERAL(28, 289, 15), // "QTextCharFormat"
+QT_MOC_LITERAL(29, 305, 3) // "fmt"
 
     },
     "ImageTextMainWindow\0open\0\0newfile\0"
     "copy\0cut\0past\0about\0printText\0PrintImage\0"
     "zoomIn\0zoomOut\0rotate90\0rotate180\0"
     "rotate270\0mirrHorizontal\0mirrVertical\0"
-    "unDo\0reDo"
+    "unDo\0reDo\0showFontComBox\0comboxstr\0"
+    "showSizeSpinBox\0spinValue\0showBoldBtn\0"
+    "showItalicBtn\0showUnderLineBtn\0"
+    "showColorBtn\0showCurrentFormatChanged\0"
+    "QTextCharFormat\0fmt"
 };
 #undef QT_MOC_LITERAL
 
@@ -66,7 +81,7 @@ static const uint qt_meta_data_ImageTextMainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      17,   14, // methods
+      24,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -74,23 +89,30 @@ static const uint qt_meta_data_ImageTextMainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   99,    2, 0x0a /* Public */,
-       3,    0,  100,    2, 0x0a /* Public */,
-       4,    0,  101,    2, 0x0a /* Public */,
-       5,    0,  102,    2, 0x0a /* Public */,
-       6,    0,  103,    2, 0x0a /* Public */,
-       7,    0,  104,    2, 0x0a /* Public */,
-       8,    0,  105,    2, 0x0a /* Public */,
-       9,    0,  106,    2, 0x0a /* Public */,
-      10,    0,  107,    2, 0x0a /* Public */,
-      11,    0,  108,    2, 0x0a /* Public */,
-      12,    0,  109,    2, 0x0a /* Public */,
-      13,    0,  110,    2, 0x0a /* Public */,
-      14,    0,  111,    2, 0x0a /* Public */,
-      15,    0,  112,    2, 0x0a /* Public */,
-      16,    0,  113,    2, 0x0a /* Public */,
-      17,    0,  114,    2, 0x0a /* Public */,
-      18,    0,  115,    2, 0x0a /* Public */,
+       1,    0,  134,    2, 0x0a /* Public */,
+       3,    0,  135,    2, 0x0a /* Public */,
+       4,    0,  136,    2, 0x0a /* Public */,
+       5,    0,  137,    2, 0x0a /* Public */,
+       6,    0,  138,    2, 0x0a /* Public */,
+       7,    0,  139,    2, 0x0a /* Public */,
+       8,    0,  140,    2, 0x0a /* Public */,
+       9,    0,  141,    2, 0x0a /* Public */,
+      10,    0,  142,    2, 0x0a /* Public */,
+      11,    0,  143,    2, 0x0a /* Public */,
+      12,    0,  144,    2, 0x0a /* Public */,
+      13,    0,  145,    2, 0x0a /* Public */,
+      14,    0,  146,    2, 0x0a /* Public */,
+      15,    0,  147,    2, 0x0a /* Public */,
+      16,    0,  148,    2, 0x0a /* Public */,
+      17,    0,  149,    2, 0x0a /* Public */,
+      18,    0,  150,    2, 0x0a /* Public */,
+      19,    1,  151,    2, 0x0a /* Public */,
+      21,    1,  154,    2, 0x0a /* Public */,
+      23,    0,  157,    2, 0x0a /* Public */,
+      24,    0,  158,    2, 0x0a /* Public */,
+      25,    0,  159,    2, 0x0a /* Public */,
+      26,    0,  160,    2, 0x0a /* Public */,
+      27,    1,  161,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void,
@@ -110,6 +132,13 @@ static const uint qt_meta_data_ImageTextMainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,   20,
+    QMetaType::Void, QMetaType::QString,   22,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 28,   29,
 
        0        // eod
 };
@@ -137,10 +166,16 @@ void ImageTextMainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
         case 14: _t->mirrVertical(); break;
         case 15: _t->unDo(); break;
         case 16: _t->reDo(); break;
+        case 17: _t->showFontComBox((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 18: _t->showSizeSpinBox((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 19: _t->showBoldBtn(); break;
+        case 20: _t->showItalicBtn(); break;
+        case 21: _t->showUnderLineBtn(); break;
+        case 22: _t->showColorBtn(); break;
+        case 23: _t->showCurrentFormatChanged((*reinterpret_cast< QTextCharFormat(*)>(_a[1]))); break;
         default: ;
         }
     }
-    Q_UNUSED(_a);
 }
 
 const QMetaObject ImageTextMainWindow::staticMetaObject = {
@@ -168,13 +203,13 @@ int ImageTextMainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 17)
+        if (_id < 24)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 17;
+        _id -= 24;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 17)
+        if (_id < 24)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 17;
+        _id -= 24;
     }
     return _id;
 }
